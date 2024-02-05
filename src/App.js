@@ -26,7 +26,6 @@ const productData = [
 
 const App = () => {
    const [newProduct, setNewProduct] = useState(productData)
-   const [state, setState] = useState()
 
    const addNewExpensesHandler = (data) => {
       setNewProduct([...newProduct, data])
