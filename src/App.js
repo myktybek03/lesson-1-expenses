@@ -26,6 +26,7 @@ const productData = [
 
 const App = () => {
    const [newProduct, setNewProduct] = useState(productData)
+   const [state, setState] = useState()
 
    const addNewExpensesHandler = (data) => {
       setNewProduct([...newProduct, data])
@@ -36,11 +37,11 @@ const App = () => {
       setNewProduct(newData)
    }
    return (
-      <div>
+      <>
          <NewExpenses onSubmit={addNewExpensesHandler} />
          <Expenses data={newProduct} onDelete={deleteExpenses} />
          {/* <Expenses data={productData} /> */}
-      </div>
+      </>
    )
 }
 

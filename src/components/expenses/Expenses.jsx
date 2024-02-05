@@ -12,8 +12,6 @@ const Expenses = (props) => {
             )
          })}
          {props.children}
-         {/* <div>{data[0].title}</div>
-         <div>{data[0].price}</div> */}
       </div>
    )
 }
